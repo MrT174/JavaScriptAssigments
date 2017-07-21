@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>THE TIME</title>
+</head>
+<body>
+<script>
+function theTime(hour,min,period){
+
+/*var time1={"Hour":"8", "Minute":"50", "Period":"AM"};
+var time2={"Hour":"7", "Minute":"15", "Period":"PM"};
+var time3={"Hour":"9", "Minute":"35", "Period":"PM"};
+
+if((time1.Hour=="8")&&( time1.Minute=="50")&&(time1.Period=="AM")){
+
+
+console.log("It's almost 9 in the morning!!!!");
+}
+
+
+if((time2.Hour=="7")&&( time2.Minute=="15")&&(time2.Period=="PM")){
+
+
+console.log("It's just after "+time2.Hour+" in the evening!!!");
+
+}
+
+if((time3.Hour=="9")&&( time3.Minute=="35")&&(time3.Period=="PM")){
+
+
+console.log("It's just after half past "+time3.Hour+ ":" +time3.Minute+""+time3.Period +" in the evening!!!");
+
+}
+
+
+
+*/
+var hour= document.getElementById('hour').value;
+var min= document.getElementById('min').value;
+var period= document.getElementById('period').value;
+
+if((hour==8)&&(min==50)&&(period=="am")){
+
+
+console.log("It's almost 9 in the morning!!!!");
+}else if((hour==7)&&( min==15)&&(period=="pm")){
+
+
+console.log("It's just after "+hour+" in the evening!!!");
+
+}else if((hour==9)&&( min==35)&&(period=="pm")){
+
+
+console.log("It's just after half past "+hour+ ":" +min+""+period +" in the evening!!!");
+
+}else{
+
+
+document.getElementById("error").innerHTML="The values entered are not present in within the conditions.";
+
+}
+
+}
+</script>
+
+<h1>PLEASE VIEW THE CONSOLE AFTER CLICKING THE BUTTON</h1>
+<p>Instructions: Enter the hour,minute and period. If the values are correct,they will appear in the console. The values  will have to be one of the following:<br>
+8:50am<br>
+7:15pm<br>
+9:35pm<br>
+Otherwise error displays.
+</p>
+<h1 id="error"></h1>
+Hour:<br><input id="hour" type="text"/><br>
+Minute:<br><input id="min" type="text"/><br>
+Period:<br><input id="period" type="text"/><br><br>
+<button onclick="theTime(hour,min,period)">SUBMIT</button>
+</body>

@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta charset="UTF-8" type="text/javascript/>
+<title>For a Fee</title>
+</head>
+
+<body>
+<script>
+function calculate(){
+var p=10000.00;
+for(var r=0; r<p; r++){
+var total=0;
+   total= p*0.01*30;
+
+ if(total!=null){
+  
+   document.getElementById("ten_thousand").innerHTML=total;
+console.log(total);
+continue;
+ alert(total);
+
+}
+}
+
+};
+
+
+</script>
+
+<h1>For a Few Billion</h1>
+
+<p>
+There is an old tale about a king who offered a servant $10,000 as a reward. The servant instead asked that for 30 days he be given an amount that would double, starting with a penny. (1 penny for the first day, 2 for the second, 4 for the third, then 8, 16, 32 pennies, and so on).</p><br>
+
+<p> How much was the reward after thirty days?</p>
+
+<p>Result for 10,000:</p><br>
+<section id="ten_thousand"></section>
+<button onclick="calculate()">Submit</button>
+
+
+<p>How about 1 billion?</p><br>
+<p >Result for 1,000,000,000:</p>
+
+<section id="one_billion" ></section>
+
+
+<br>
+<button onclick="calculateII()">Submit</button>
+<script>
+function calculateII(){
+for(var i=0; i<10000000000; i++){
+var totalII=0;
+   totalII= i*0.01*30;
+console.log(totalII);
+ if(totalII!=null){
+   document.getElementById("one_billion").innerHTML=totalII;
+
+}
+}
+
+};
+
+</script>
+
+</body>
+</html>

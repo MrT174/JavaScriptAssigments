@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+
+<head></head>
+
+<body>
+
+<script>
+function myBirthdayFunction(){
+var daysUntilMyBirthday=60;
+var i=0;
+while((i<daysUntilMyBirthday)){
+
+if((i>30) && (i<60)){
+i++;
+
+document.write("<p>"+i+""+ "My birthday is such a long time away... :("+"</p>");
+console.log(i +"My birthday is such a long time away... :("+"\n");
+if (i==60){
+ break;
+}
+
+}else if(i>=5){
+
+i++;
+document.write("<p>"+i+""+ "Hooray my birthday is on the way!!!!... :)"+"</p>");
+console.log( i+"Hooray my birthday is on the way!!!!... :)"+"\n");
+if(i==30){
+continue;
+}
+}else if(i<5){
+i++;
+document.write("<p>"+i+""+"YES MY BIRTHDAY IS FEW DAYS AWAY!!!!... :)"+"<p>");
+console.log(i +"YES MY BIRTHDAY IS A FEW DAYS AWAY!!!!... :)"+"\n");
+continue;
+}
+
+
+
+
+}
+}
+</script>
+<p id="para" onclick="myBirthdayFunction()">Click
+
+</p>
+
+
+
+</body>

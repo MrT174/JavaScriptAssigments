@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Play Slots</title>
+    <script>
+    "use strict";
+    function slots(){
+
+      var userCoinAmount=50.00;
+          var text;
+          var money = document.getElementById("myInput").value;
+
+          switch(money) {
+              case ".25":
+                   if(money==".25"){
+
+            for(var i=0; i<100;i++){
+            var afterPlay=userCoinAmount-.25;
+            var total=Math.random(i)*money;
+                var totalII =total +afterPlay;
+                text=Math.floor(totalII);
+
+            }
+              //text=;
+              }
+              break;
+              case ".50":
+              if(money==".50"){
+              for(money; money<200;money++){
+               var afterPlay=userCoinAmount-.50;
+             var total=Math.random(i)*money;
+                var totalII =total +userCoinAmount;
+                text=Math.floor(totalII);
+            }
+              }
+              break;
+              case ".75":
+               if(money==".75"){
+              for(money; money<300;money++){
+               var afterPlay=userCoinAmount-.75;
+             var total=Math.random(i)*money;
+                var totalII =total +userCoinAmount;
+                text=Math.floor(totalII);
+            }
+              }
+              break;
+               case "1.00":
+               if(money=="1.00"){
+              for(money; money<400;money++){
+              var afterPlay=userCoinAmount-1.00;
+             var total=Math.random(i)*money;
+                var totalII =total +userCoinAmount;
+                text=Math.floor(totalII);
+            }
+              }
+              break;
+              default:
+              text = "I have never heard of that fruit...";
+          }
+          document.getElementById("demo").innerHTML = text;
+    }
+
+    </script>
+  </head>
+  <body>
+<p>
+  Let's play the slots!<br>
+
+  Make a function that takes a number of quarters (1 quarter = 1 game).<br>
+
+  There is a 1 in 100 chance to win the slot machine (which will give you between 50 - 100 quarters -- use Math.random and Math.floor to pick a random number of coins).<br>
+
+  While the user still has quarters, use Math.random to determine if they won.<br>
+
+  If they ever win, return the number of quarters (ex: they had 50 remaining quarters and won 90, so it should return 140).<br>
+
+  Return 0 if all the quarters were wasted.
+
+</p>
+<input id="myInput" type="text">
+<button onclick="slots()">Try it</button>
+
+<p id="demo"></p>
+
+  </body>
+</html>

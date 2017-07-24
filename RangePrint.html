@@ -1,0 +1,64 @@
+
+<DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta charset="UTF-8"/>
+</head>
+
+<body>
+
+
+<script>
+function printRange(){
+var start=document.getElementById("startPoint").value;
+var end = document.getElementById("endPoint").value; 
+var skip=document.getElementById("skipAll").value;
+
+var all=[start,end,skip];
+var all1=[start,skip];
+
+if((all[0]!=null)&&(all[1]!=null)&&(all[2]!=null)){
+
+
+
+for(var i=1; i<all[1]; i++){
+
+
+var total=0;
+        total= total*(all[0]*2 %all[2])+i ;
+       
+         document.write("<ul><li>"+total+"</li></ul>");
+
+
+
+}
+
+
+
+
+
+}
+
+
+}
+
+
+
+
+</script>
+
+<p>Create a function that can take a start point, end point, and skip amount, to print all numbers in the range.</p>
+
+StartPoint:<input id="startPoint" type="text" /><br><br>
+
+EndPoint:<input id="endPoint" type="text" /><br><br>
+
+
+Skip All: <input id="skipAll" type="text" /><br><br>
+<p id="p"></p>
+
+<button onclick="printRange()">Submit</button>
+</body>
+</html>

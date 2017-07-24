@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Fancy Array</title>
+    </head>
+    <body>
+        <script>
+            function FancyArray()
+              {
+                var array=["James","Jill","Jane","Jack"];
+                for(var i=0;i<array.length;i++)
+                {
+                  document.write("<ul style='list-style:none;'><li>--> "+i+" - "+array[i]+"</li></ul>");
+                }
+
+            }
+        </script>
+
+        <h1>FancyArray</h1>
+        <p>
+          Let's make it look fancy! Write a function that will make it print like:<br>
+
+            0 -> James<br>
+            1 -> Jill<br>
+            2 -> Jane<br>
+            3 -> Jack
+
+        </p>
+        <button onclick="FancyArray()">SUBMIT</button>
+    </body>
+</html>

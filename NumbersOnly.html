@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function newArr(){
+//
+var newArray1 =  numbersOnly=[1, "apple", -3, "orange", 0.5];
+var newArray =  numbersOnly=[1, "apple", -3, "orange", 0.5];
+for(var i=0; i<newArray1.length;i++){
+
+document.getElementById("demo").innerHTML = "Original Array:  "+ newArray1;
+var text1=16;//document.getElementById("enteredValue1").value;
+
+var text2=20;//document.getElementById("enteredValue2").value;
+
+}
+if((typeof text2==='number')&&(typeof text2==='number')){
+for(var r=0;r<newArray.length; r++){
+var temp1 = text1;
+var temp2=text2;
+newArray[1]=temp1;
+newArray[3]=temp2;
+document.getElementById("demo1").innerHTML = "New Array values :  "+ newArray;
+}
+}else{
+
+
+
+
+document.getElementById("demo1").innerHTML = "Letters are not accepted";
+}
+
+
+}
+function newLetter(){
+var newArray1 =  numbersOnly=[1, "apple", -3, "orange", 0.5];
+var newArray =  numbersOnly=[1, "apple", -3, "orange", 0.5];
+for(var i=0; i<newArray1.length;i++){
+
+document.getElementById("demo").innerHTML = "Original Array:  "+ newArray1;
+var text1="r";//document.getElementById("enteredValue1").value;
+
+var text2="r";//document.getElementById("enteredValue2").value;
+
+}
+if((typeof text2==='number')&&(typeof text2==='number')){
+for(var r=0;r<newArray.length; r++){
+var temp1 = text1;
+var temp2=text2;
+newArray[1]=temp1;
+newArray[3]=temp2;
+document.getElementById("demo1").innerHTML = "New Array values :  "+ newArray;
+}
+}else{
+
+
+
+
+document.getElementById("demo1").innerHTML = "Letters are not accepted";
+}
+
+
+}
+
+</script>
+<h1>Explanation of the reason chose to use buttons instead of adding textfields</h1>
+<p>The typeof didn't recognize the inputs from the textfields... different entries evaluated to the same type... whether a number or letter...Decided to have the values set into a variable instead</p>
+<!--Enter NUMBER OR LETTERS: <input id="enteredValue1" type="text"  />-->
+<!--Enter NUMBER OR LETTERS: <input id="enteredValue2" type="text"  />-->
+New Number:<button onclick="newArr()">Submit</button><br>
+NewLetter:<button onclick="newLetter()">Submit</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+
+</body>
+</html>
